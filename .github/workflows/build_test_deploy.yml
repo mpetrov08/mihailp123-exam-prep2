@@ -27,6 +27,8 @@ jobs:
       run: npx playwright install
     - name: Execute ui tests
       run: npm run test:ui
+    - name: Print softuni username
+      run: echo 'mihailp123'
   deploy:
     needs: build_test
     runs-on: ubuntu-latest
